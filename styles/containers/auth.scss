@@ -1,0 +1,20 @@
+@import "../variables";
+
+.container {
+  background-color: $secondary-background;
+  display: flex;
+  flex: 1;
+
+  & > div:first-child {
+    display: flex;
+    flex: 1;
+  }
+
+  .card {
+    box-shadow: 0 3px 6px rgba(0,0,7,.05), 0 3px 6px rgba(0,0,7,.05);
+    padding: 7% 7% 10%;
+    max-width: 650px;
+    width: 100vw;
+    margin: 40px 20px;
+  }
+}

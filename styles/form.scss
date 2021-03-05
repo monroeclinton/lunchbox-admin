@@ -1,0 +1,98 @@
+@import "variables";
+
+:global(.ant-input), :global(.ant-input-affix-wrapper) {
+    padding: 4px 14px 4px 0;
+}
+input:global(.ant-input), :global(.ant-input-affix-wrapper), textarea:global(.ant-input), :global(.ant-input-number) {
+    background: transparent;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    border-color: $primary-border;
+    box-shadow: none !important;
+
+    &:focus,  &:hover, &:focus-within {
+        border-right: none !important;
+    }
+    &:hover {
+        border-color: inherit;
+    }
+    &:focus, &:focus-within {
+        border-color: $secondary-border;
+        border-bottom-width: 2px;
+        margin-bottom: -1px;
+    }
+
+}
+:global(.ant-input[disabled]) {
+    color: rgb(0 0 0 / 0.50);
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+    opacity: 1;
+}
+:global(.ant-form input[type='file']) {
+    border: none !important;
+    outline: none !important;
+}
+
+.label {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+
+    span {
+        font-size: 15px;
+        font-weight: 600;
+        color: $primary-text;
+    }
+}
+
+:global(.ant-btn:hover), :global(.ant-btn:focus) {
+    color: $primary-color;
+    background: #ffffff;
+    border-color: $primary-color;
+    border-radius: 3px;
+}
+.button {
+    flex: 1;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover, &:active, &:focus {
+        color: darken($primary-color, 10%);
+        border: 1px solid darken($primary-color, 10%);
+    }
+}
+.button .label {
+    margin-bottom: 0;
+
+    span {
+        color: inherit;
+    }
+}
+.button.large {
+    height: 40px;
+}
+.button.primary, :global(.ant-btn-primary) {
+    color: #ffffff;
+    background-color: $primary-color;
+    border: none;
+
+    &:hover, &:active, &:focus {
+        color: #ffffff !important;
+        background-color: darken($primary-color, 10%);
+    }
+}
+.button.primary.slider {
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, $primary-color 50%, darken($primary-color, 5%) 50%);
+    background-size: 100% 200%;
+
+    &:hover, &:active, &:focus {
+        background-position: 0 100%;
+        transform: translateY(-2px);
+    }
+}
+:global(.ant-upload-list-item:hover .ant-upload-list-item-card-actions-btn) {
+    border-color: rgba(0, 0, 0, 0.15);
+}

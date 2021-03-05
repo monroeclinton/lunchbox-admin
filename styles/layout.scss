@@ -1,0 +1,59 @@
+@import "variables";
+
+.flex {
+  display: flex;
+}
+.flexGrow {
+  flex: 1;
+}
+.flexColumn {
+  flex-direction: column;
+}
+.alignStart {
+  align-items: start;
+}
+.alignCenter {
+  align-items: center;
+}
+.alignEnd {
+  align-items: end;
+}
+.justifyStart {
+  justify-content: start;
+}
+.justifyCenter {
+  justify-content: center;
+}
+.justifyEnd {
+  justify-content: end;
+}
+.block {
+  display: block;
+}
+.hidden {
+  display: none !important;
+}
+.mL {
+  margin-left: auto;
+}
+.mR {
+  margin-right: auto;
+}
+.mT {
+  margin-top: auto;
+}
+.mB {
+  margin-bottom: auto;
+}
+.mL1 {
+  margin-left: 1rem;
+}
+.mR1 {
+  margin-right: 1rem;
+}
+.mT1 {
+  margin-top: 1rem;
+}
+.mB1 {
+  margin-bottom: 1rem;
+}

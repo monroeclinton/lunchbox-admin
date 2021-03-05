@@ -1,0 +1,29 @@
+@import "variables";
+
+.sidebar {
+  display: flex;
+  width: 310px;
+  position: fixed;
+  background: $tertiary-background;
+  overflow: auto;
+  height: 100vh;
+  left: 0;
+
+  .logoContainer {
+    margin: 2rem 16px;
+
+    .logo {
+      width: 90%;
+    }
+    .logo g {
+      fill: #ffffff;
+    }
+  }
+}
+
+:global(.ant-menu.ant-menu-dark) {
+  background: rgba(0, 0, 0, 0);
+}
+:global(.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected ) {
+  background: rgba(0, 0, 0, 0);
+}

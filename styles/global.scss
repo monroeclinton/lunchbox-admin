@@ -1,0 +1,21 @@
+@import "variables";
+
+body{
+  display: flex;
+  color: $primary-text;
+}
+:global(#root) {
+  display: flex;
+  flex: 1;
+}
+h1, h2, h3 {
+  font-family: "Open Sans", serif;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+h1, h2 {
+  color: $primary-color;
+}
+h3 {
+  color: $primary-text;
+}

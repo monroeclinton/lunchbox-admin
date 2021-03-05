@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.iconContainer {
+    display: flex;
+    background: $secondary-background;
+    padding: 2rem;
+    border-radius: 100rem;
+    margin-bottom: 1rem;
+
+    .icon {
+        color: $primary-color;
+
+        svg {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

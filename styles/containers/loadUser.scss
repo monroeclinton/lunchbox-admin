@@ -1,0 +1,21 @@
+@import "../variables";
+
+.logoContainer g {
+    fill: $primary-color;
+}
+
+.loadUser {
+    display: flex;
+
+    .spinner {
+        margin-right: 1rem;
+
+        circle {
+            stroke: $primary-color;
+        }
+    }
+
+    .logo {
+        margin-left: 1rem;
+    }
+}

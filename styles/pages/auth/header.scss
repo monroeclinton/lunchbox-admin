@@ -1,0 +1,23 @@
+@import "../../variables";
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  .top {
+    display: flex;
+    justify-content: center;
+    top: -35px;
+    position: absolute;
+  }
+
+  .body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    & g {
+      fill: $primary-color;
+    }
+  }
+}
